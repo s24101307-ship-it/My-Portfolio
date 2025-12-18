@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos - 白美玲(Mersoss Baring)'s Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Merriweather&display=swap" rel="stylesheet">
+
+    <style>
+        /* Custom styles for the page */
+        body {
+            font-family: 'Merriweather', serif;
+            /* Cute polka dot background */
+            background-color: #fefce8; /* yellow-50 */
+            background-image: radial-gradient(rgba(250, 204, 21, 0.4) 1.5px, #fefce8 1.5px); /* yellow-400 at 40% opacity */
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="min-h-screen p-4 md:p-8">
+
+    <div class="max-w-7xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden">
+
+        <header class="p-8 bg-yellow-300 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-yellow-900 font-['Dancing_Script',_cursive]">
+                白美玲 Meross Baring
+            </h1>
+        </header>
+
+        <nav class="flex flex-wrap justify-center gap-3 p-6 bg-yellow-100 border-t-4 border-yellow-200" id="navigation">
+            <a href="index.html" class="nav-button py-2 px-5 bg-white text-yellow-700 font-semibold rounded-full shadow-md hover:bg-yellow-200 transition duration-300 ease-in-out transform hover:-translate-y-1">
+                Home
+            </a>
+            <a href="links.html" class="nav-button py-2 px-5 bg-white text-yellow-700 font-semibold rounded-full shadow-md hover:bg-yellow-200 transition duration-300 ease-in-out transform hover:-translate-y-1">
+                About & Links
+            </a>
+            <a href="slideshows.html" class="nav-button py-2 px-5 bg-white text-yellow-700 font-semibold rounded-full shadow-md hover:bg-yellow-200 transition duration-300 ease-in-out transform hover:-translate-y-1">
+                Slideshows
+            </a>
+            <a href="videos.html" class="nav-button py-2 px-5 bg-yellow-200 text-yellow-900 font-semibold rounded-full shadow-md transition duration-300 ease-in-out transform">
+                Videos
+            </a>
+            <a href="thinking.html" class="nav-button py-2 px-5 bg-white text-yellow-700 font-semibold rounded-full shadow-md hover:bg-yellow-200 transition duration-300 ease-in-out transform hover:-translate-y-1">
+                Critical Thinking
+            </a>
+            <a href="articles.html" class="nav-button py-2 px-5 bg-white text-yellow-700 font-semibold rounded-full shadow-md hover:bg-yellow-200 transition duration-300 ease-in-out transform hover:-translate-y-1">
+                Articles
+            </a>
+        </nav>
+
+        <section class="p-8 md:p-12 min-h-[300px]">
+            <h2 class="text-4xl font-bold text-yellow-800 mb-6 text-center font-['Dancing_Script',_cursive]">
+                Video Presentation: The Relevance of Statistics
+            </h2>
+            <p class="text-lg text-yellow-700 mb-10 text-center max-w-3xl mx-auto">
+                Watch my video presentation on how statistics serve as the foundation for rational, evidence-based decision-making.
+            </p>
+
+            <div class="max-w-4xl mx-auto text-center bg-yellow-50 p-4 md:p-10 rounded-2xl border border-yellow-200">
+                <div class="relative" style="padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                    <video controls class="absolute top-0 left-0 w-full h-full rounded-lg shadow-xl" poster="optional_thumbnail.jpg">
+                        <source src="videos.mp4" type="video/mp4">
+                        Your browser does not support the video tag. Please download the video
+                        <a href="videos.mp4" class="text-yellow-600 underline">here</a>.
+                    </video>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+</html>

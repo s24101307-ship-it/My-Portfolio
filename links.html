@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About & Links - 白美玲(Mersoss Baring)'s Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Merriweather&display=swap" rel="stylesheet">
+
+    <style>
+        /* Custom styles for the page */
+        body {
+            font-family: 'Merriweather', serif;
+            /* Cute polka dot background */
+            background-color: #fefce8; /* yellow-50 */
+            background-image: radial-gradient(rgba(250, 204, 21, 0.4) 1.5px, #fefce8 1.5px); /* yellow-400 at 40% opacity */
+            background-size: 20px 20px;
+        }
+
+        /* --- Simplified Sunflower Animation Styles --- */
+        .sunflower-container {
+            position: relative;
+            width: 150px; /* Matched to homepage */
+            height: 150px; /* Matched to homepage */
+            margin: 20px;
+            animation: sway 5s ease-in-out infinite;
+        }
+
+            .sunflower-container.flower-2 {
+                animation-duration: 4.5s;
+                animation-delay: 0.5s;
+            }
+
+        .sunflower-center {
+            position: absolute;
+            width: 50px; /* Matched to homepage */
+            height: 50px; /* Matched to homepage */
+            background-color: #78350f; /* yellow-900 */
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+            border: 3px solid #b45309; /* yellow-700 */
+        }
+
+        .petal {
+            position: absolute;
+            width: 35px; /* Matched to homepage */
+            height: 60px; /* Matched to homepage */
+            background-color: #facc15; /* yellow-400 */
+            border: 2px solid #f59e0b; /* yellow-500 */
+            border-radius: 50% 50% 0 0;
+            top: 50%;
+            left: 50%;
+            transform-origin: bottom center;
+        }
+
+        @keyframes sway {
+            0%, 100% {
+                transform: rotate(-3deg);
+            }
+
+            50% {
+                transform: rotate(3deg);
+            }
+        }
+
+        /* Bouncing Emoji Animation */
+        .bounce-emoji {
+            display: inline-block;
+            animation: bounce 1.5s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-20px);
+            }
+
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen p-4 md:p-8">
+
+    <div class="max-w-7xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden">
+
+        <header class="p-8 bg-yellow-300 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-yellow-900 font-['Dancing_Script',_cursive]">
+                白美玲 Meross Baring
+            </h1>
+        </header>
+
+        <!-- Standardized Navigation Links -->
+        <nav class="flex flex-wrap justify-center gap-3 p-6 bg-yellow-100 border-t-4 border-yellow-200" id="navigation">
+            <a href="index.html" class="nav-button py-2 px-5 bg-white text-yellow-700 font-semibold rounded-full shadow-md hover:bg-yellow-200 transition duration-300 ease-in-out transform hover:-translate-y-1">
+                Home
+            </a>
+            <!-- This is now the active page -->
+            <a href="links.html" class="nav-button py-2 px-5 bg-yellow-200 text-yellow-900 font-semibold rounded-full shadow-md transition duration-300 ease-in-out transform">
+                About & Links
+            </a>
+            <a href="slideshows.html" class="nav-button py-2 px-5 bg-white text-yellow-700 font-semibold rounded-full shadow-md hover:bg-yellow-200 transition duration-300 ease-in-out transform hover:-translate-y-1">
+                Slideshows
+            </a>
+            <a href="videos.html" class="nav-button py-2 px-5 bg-white text-yellow-700 font-semibold rounded-full shadow-md hover:bg-yellow-200 transition duration-300 ease-in-out transform hover:-translate-y-1">
+                Videos
+            </a>
+            <a href="thinking.html" class="nav-button py-2 px-5 bg-white text-yellow-700 font-semibold rounded-full shadow-md hover:bg-yellow-200 transition duration-300 ease-in-out transform hover:-translate-y-1">
+                Critical Thinking
+            </a>
+            <a href="articles.html" class="nav-button py-2 px-5 bg-white text-yellow-700 font-semibold rounded-full shadow-md hover:bg-yellow-200 transition duration-300 ease-in-out transform hover:-translate-y-1">
+                Articles
+            </a>
+        </nav>
+
+        <!-- Content Section -->
+        <section class="p-8 md:p-12 min-h-[300px]">
+
+            <!-- Personal Info Section -->
+            <!-- This container helps center the whole block -->
+            <div class="flex justify-center">
+                <div class="md:flex md:items-center md:justify-center md:space-x-4 lg:space-x-8 mb-12">
+                    <!-- Sunflower 1 -->
+                    <div class="flex-shrink-0 hidden md:flex justify-center items-center">
+                        <div class="sunflower-container flower-1">
+                            <div class="sunflower-center"></div>
+                            <div class="petal" style="transform: translate(-50%, -100%) rotate(0deg);"></div>
+                            <div class="petal" style="transform: translate(-50%, -100%) rotate(45deg);"></div>
+                            <div class="petal" style="transform: translate(-50%, -100%) rotate(90deg);"></div>
+                            <div class="petal" style="transform: translate(-50%, -100%) rotate(135deg);"></div>
+                            <div class="petal" style="transform: translate(-50%, -100%) rotate(180deg);"></div>
+                            <div class="petal" style="transform: translate(-50%, -100%) rotate(225deg);"></div>
+                            <div class="petal" style="transform: translate(-50%, -100%) rotate(270deg);"></div>
+                            <div class="petal" style="transform: translate(-50%, -100%) rotate(315deg);"></div>
+                        </div>
+                    </div>
+
+                    <!-- Profile Card -->
+                    <div class="flex-shrink-0 bg-yellow-50 border-4 border-yellow-200 rounded-3xl p-6 md:p-8 max-w-2xl mx-auto shadow-lg">
+                        <h2 class="text-4xl font-bold text-yellow-800 mb-6 text-center font-['Dancing_Script',_cursive]">
+                            About Me
+                        </h2>
+                        <div class="flex flex-col sm:flex-row items-center">
+                            <!-- Profile Picture with Cute Border -->
+                            <img src="profile-pic.jpg" alt="A profile picture of Meross Baring" class="w-40 h-40 rounded-full border-8 border-yellow-300 shadow-xl mb-6 sm:mb-0 sm:mr-8 flex-shrink-0 object-cover">
+
+                            <!-- Info Details -->
+                            <div class="text-base md:text-lg text-yellow-800 space-y-2">
+                                <p><span class="font-semibold text-yellow-900">English Name:</span> Meross C. Baring</p>
+                                <p><span class="font-semibold text-yellow-900">Chinese Name:</span> 白美玲 (bái měi líng)</p>
+                                <p><span class="font-semibold text-yellow-900">Age:</span> 20 years old (Born: March 17, 2005)</p>
+                                <p><span class="font-semibold text-yellow-900">Lives In:</span> Kaohsiung, Taiwan</p>
+                                <p><span class="font-semibold text-yellow-900">Hometown:</span> San Fernando, Cebu, Philippines</p>
+                                <p><span class="font-semibold text-yellow-900">Studies:</span> 樹德科技大學 (Department of Information Management)</p>
+                                <p><span class="font-semibold text-yellow-900">Web Creation Date:</span> 2025</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sunflower 2 -->
+                    <div class="flex-shrink-0 hidden md:flex justify-center items-center">
+                        <div class="sunflower-container flower-2">
+                            <div class="sunflower-center"></div>
+                            <div class="petal" style="transform: translate(-50%, -100%) rotate(0deg);"></div>
+                            <div class="petal" style="transform: translate(-50%, -100%) rotate(45deg);"></div>
+                            <div class="petal" style="transform: translate(-50%, -100%) rotate(90deg);"></div>
+                            <div class="petal" style="transform: translate(-50%, -100%) rotate(135deg);"></div>
+                            <div class="petal" style="transform: translate(-50%, -100%) rotate(180deg);"></div>
+                            <div class="petal" style="transform: translate(-50%, -100%) rotate(225deg);"></div>
+                            <div class="petal" style="transform: translate(-50%, -100%) rotate(270deg);"></div>
+                            <div class="petal" style="transform: translate(-50%, -100%) rotate(315deg);"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Grid for Links -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- Column 1: Contacts & Web Links -->
+                <div class="bg-yellow-50 border border-yellow-200 rounded-2xl p-6">
+                    <!-- Social Contacts -->
+                    <h3 class="text-2xl font-bold text-yellow-800 mb-4 font-['Dancing_Script',_cursive]">Social Contacts</h3>
+                    <ul class="list-disc list-inside space-y-2 text-yellow-700 mb-8">
+                        <li><span class="font-semibold">Personal Email:</span> baringmeross@gmail.com</li>
+                        <li><span class="font-semibold">School Email:</span> s24101307@stu.edu.tw</li>
+                    </ul>
+
+                    <!-- Web Links -->
+                    <h3 class="text-2xl font-bold text-yellow-800 mb-4 font-['Dancing_Script',_cursive]">Web Links for Statistics</h3>
+                    <ul class="list-disc list-inside space-y-2 text-yellow-700">
+                        <li><a href="https://osr.statisticsauthority.gov.uk/publication/statistics-in-personal-decision-making/pages/6/" target="_blank" class="hover:underline">Statistic in Personal Decision-Making</a></li>
+                        <li><a href="https://dhruv.edu.in/the-role-of-statistics-in-decision-making-and-its-benefits-for-students/" target="_blank" class="hover:underline">The Role Of Statistics In Decision-Making</a></li>
+                        <li><a href="https://www.6sigmastudy.com/article?title=Power-of-Statistics-in-Decision-Making" target="_blank" class="hover:underline">Power OF Statistics in Decision Making</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 2: Video Links -->
+                <div class="bg-yellow-50 border border-yellow-200 rounded-2xl p-6">
+                    <h3 class="text-2xl font-bold text-yellow-800 mb-4 font-['Dancing_Script',_cursive]">Video Links for Mathematics</h3>
+                    <ul class="list-disc list-inside space-y-2 text-yellow-700">
+                        <li><a href="https://www.youtube.com/watch?v=Ya1oncE4SjQ&list=PLPgKBibhNh70Vb4w-1s4-6lZQx_lKk0bW&index=2" target="_blank" class="hover:underline">Lecture 1: Definitions and Key Terms</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=Vb2DRMPrwWM&list=PLPgKBibhNh70Vb4w-1s4-6lZQx_lKk0bW&index=2" target="_blank" class="hover:underline">Lecture 2: Qualitative vs Quantitative Data</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=YuHawi74C_s&list=PLPgKBibhNh70Vb4w-1s4-6lZQx_lKk0bW&index=3" target="_blank" class="hover:underline">Lecture 3: Sampling</a></li>
+                        <li>...and so on...</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Encouragement Note -->
+            <div class="mt-12 text-center max-w-3xl mx-auto">
+                <h3 class="text-3xl font-bold text-yellow-800 mb-4 font-['Dancing_Script',_cursive]">
+                    A Note of Encouragement
+                    <span class="bounce-emoji text-4xl">✨</span>
+                </h3>
+                <p class="text-lg md:text-xl text-yellow-700 leading-relaxed text-justify">
+                    Welcome to this small corner of the web! This portfolio is a snapshot of my journey as a student in Taiwan, far from my home in the Philippines. It's a place where I organize my thoughts, share my projects, and practice my skills. Creating this is a big step for me, and I'm so happy you're here to see it. Every link, every page, and every line of code represents hours of learning and a lot of courage. I hope you find something interesting or helpful. Thank you for visiting!
+                </p>
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+</html>

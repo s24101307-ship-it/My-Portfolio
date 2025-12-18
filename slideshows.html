@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshows - 白美玲(Meross Baring)'s Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Merriweather&display=swap" rel="stylesheet">
+
+    <style>
+
+        /* Custom styles for the page */
+        body {
+            font-family: 'Merriweather', serif;
+            /* Cute polka dot background */
+            background-color: #fefce8; /* yellow-50 */
+            background-image: radial-gradient(rgba(250, 204, 21, 0.4) 1.5px, #fefce8 1.5px); /* yellow-400 at 40% opacity */
+            background-size: 20px 20px;
+        }
+
+
+        /* Custom CSS to hide all but the current slide, important for the carousel */
+        .slide {
+            display: none;
+        }
+
+            .slide.active {
+                display: block;
+            }
+
+
+        /* Style for the external arrows - LIGHTER BACKGROUND FOR EMOJI CONTRAST */
+        .arrow-button {
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #fffbeb; /* Very Light Yellow (yellow-50) */
+            color: #854d0e; /* yellow-900 for text/emojis (though emojis ignore this) */
+            padding: 8px 12px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+            z-index: 20;
+            border: 3px solid #fcd34d; /* yellow-300 border for definition */
+            font-size: 2rem;
+        }
+
+            .arrow-button:hover {
+                background-color: #fef08a; /* yellow-200 on hover */
+                transform: translateY(-50%) scale(1.1);
+                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+            }
+
+            .arrow-button.left {
+                left: -50px;
+            }
+
+            .arrow-button.right {
+                right: -50px;
+            }
+
+        /* Custom style for the Lighter Yellow PDF Button (Retained) */
+        .yellow-pdf-button {
+            display: inline-block;
+            background-color: #fef08a; /* Lighter yellow (yellow-200) */
+            color: #854d0e; /* yellow-900 for high contrast text */
+            font-family: 'Dancing Script', cursive; /* Use the fancy font */
+            font-weight: 700;
+            text-shadow: 1px 1px 1px #fff; /* White shadow for depth */
+            font-size: 1.875rem; /* text-3xl */
+            padding: 1rem 2.5rem; /* py-4 px-10 */
+            border-radius: 3rem; /* super rounded */
+            border: 4px solid #facc15; /* yellow-400 border */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+            text-decoration: none; /* Remove underline */
+        }
+
+            .yellow-pdf-button:hover {
+                background-color: #fcd34d; /* yellow-300 on hover */
+                transform: scale(1.05) translateY(-5px);
+                box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.2);
+            }
+    </style>
+</head>
+<body class="min-h-screen p-4 md:p-8">
+
+    <div class="max-w-7xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden">
+
+        <header class="p-8 bg-yellow-300 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-yellow-900 font-['Dancing_Script',_cursive]">
+                白美玲 Meross Baring
+            </h1>
+        </header>
+
+        <nav class="flex flex-wrap justify-center gap-3 p-6 bg-yellow-100 border-t-4 border-yellow-200" id="navigation">
+            <a href="index.html" class="nav-button py-2 px-5 bg-white text-yellow-700 font-semibold rounded-full shadow-md hover:bg-yellow-200 transition duration-300 ease-in-out transform hover:-translate-y-1">
+                Home
+            </a>
+            <a href="links.html" class="nav-button py-2 px-5 bg-white text-yellow-700 font-semibold rounded-full shadow-md hover:bg-yellow-200 transition duration-300 ease-in-out transform hover:-translate-y-1">
+                About & Links
+            </a>
+            <a href="slideshows.html" class="nav-button py-2 px-5 bg-yellow-200 text-yellow-900 font-semibold rounded-full shadow-md transition duration-300 ease-in-out transform">
+                Slideshows
+            </a>
+            <a href="videos.html" class="nav-button py-2 px-5 bg-white text-yellow-700 font-semibold rounded-full shadow-md hover:bg-yellow-200 transition duration-300 ease-in-out transform hover:-translate-y-1">
+                Videos
+            </a>
+            <a href="thinking.html" class="nav-button py-2 px-5 bg-white text-yellow-700 font-semibold rounded-full shadow-md hover:bg-yellow-200 transition duration-300 ease-in-out transform hover:-translate-y-1">
+                Critical Thinking
+            </a>
+            <a href="articles.html" class="nav-button py-2 px-5 bg-white text-yellow-700 font-semibold rounded-full shadow-md hover:bg-yellow-200 transition duration-300 ease-in-out transform hover:-translate-y-1">
+                Articles
+            </a>
+        </nav>
+
+        <section class="p-8 md:p-12">
+            <h2 class="text-4xl font-bold text-yellow-800 mb-6 text-center font-['Dancing_Script',_cursive]">
+                Class Slideshows 💡
+            </h2>
+            <p class="text-lg text-yellow-700 mb-8 text-center max-w-3xl mx-auto">
+                View my presentation, **"The Relevance of Statistics in Decision-Making,"** slide by slide below.
+            </p>
+
+            <div class="max-w-6xl mx-auto relative px-12 sm:px-16 md:px-20 lg:px-24">
+
+                <button onclick="changeSlide(-1)" class="arrow-button absolute left">
+                    👈
+                </button>
+                <button onclick="changeSlide(1)" class="arrow-button absolute right">
+                    👉
+                </button>
+
+                <div id="slideshow-container" class="shadow-2xl border-4 border-yellow-400 rounded-xl overflow-hidden">
+                    <div id="slides">
+                        <img src="1.jpg" class="slide active w-full h-auto" alt="Slideshow Slide 1: Title Slide">
+                        <img src="2.jpg" class="slide w-full h-auto" alt="Slideshow Slide 2">
+                        <img src="3.jpg" class="slide w-full h-auto" alt="Slideshow Slide 3">
+                        <img src="4.jpg" class="slide w-full h-auto" alt="Slideshow Slide 4">
+                        <img src="5.jpg" class="slide w-full h-auto" alt="Slideshow Slide 5">
+                        <img src="6.jpg" class="slide w-full h-auto" alt="Slideshow Slide 6">
+                        <img src="7.jpg" class="slide w-full h-auto" alt="Slideshow Slide 7">
+                        <img src="8.jpg" class="slide w-full h-auto" alt="Slideshow Slide 8">
+                        <img src="9.jpg" class="slide w-full h-auto" alt="Slideshow Slide 9">
+                        <img src="10.jpg" class="slide w-full h-auto" alt="Slideshow Slide 10">
+                        <img src="11.jpg" class="slide w-full h-auto" alt="Slideshow Slide 11">
+                        <img src="12.jpg" class="slide w-full h-auto" alt="Slideshow Slide 12">
+                        <img src="13.jpg" class="slide w-full h-auto" alt="Slideshow Slide 13">
+                        <img src="14.jpg" class="slide w-full h-auto" alt="Slideshow Slide 14">
+                        <img src="15.jpg" class="slide w-full h-auto" alt="Slideshow Slide 15">
+                        <img src="16.jpg" class="slide w-full h-auto" alt="Slideshow Slide 16">
+                        <img src="17.jpg" class="slide w-full h-auto" alt="Slideshow Slide 17">
+                        <img src="18.jpg" class="slide w-full h-auto" alt="Slideshow Slide 18">
+                        <img src="19.jpg" class="slide w-full h-auto" alt="Slideshow Slide 19">
+                        <img src="20.jpg" class="slide w-full h-auto" alt="Slideshow Slide 20">
+                        <img src="21.jpg" class="slide w-full h-auto" alt="Slideshow Slide 21">
+                        <img src="22.jpg" class="slide w-full h-auto" alt="Slideshow Slide 22">
+                        <img src="23.jpg" class="slide w-full h-auto" alt="Slideshow Slide 23">
+                        <img src="24.jpg" class="slide w-full h-auto" alt="Slideshow Slide 24">
+                        <img src="25.jpg" class="slide w-full h-auto" alt="Slideshow Slide 25">
+                        <img src="26.jpg" class="slide w-full h-auto" alt="Slideshow Slide 26">
+                        <img src="27.jpg" class="slide w-full h-auto" alt="Slideshow Slide 27">
+                        <img src="28.jpg" class="slide w-full h-auto" alt="Slideshow Slide 28">
+                        <img src="29.jpg" class="slide w-full h-auto" alt="Slideshow Slide 29: Conclusion Slide">
+                    </div>
+                </div>
+
+                <div class="text-center mt-4">
+                    <p id="slide-number" class="text-xl font-semibold text-yellow-900"></p>
+                </div>
+
+            </div>
+
+            <hr class="border-t-4 border-yellow-400 my-10">
+
+            <div class="text-center">
+                <p class="text-xl text-yellow-800 font-bold mb-6">
+                    Need the original file? Access the PDF directly:
+                </p>
+                <a href="slideshows.pdf"
+                   target="_blank"
+                   class="yellow-pdf-button">
+                    🌟 View Original Slideshow PDF (New Tab) 🌟
+                </a>
+            </div>
+
+        </section>
+
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        const slides = document.getElementById("slides").getElementsByClassName("slide");
+        const slideNumberElement = document.getElementById("slide-number");
+
+        // Function to show a specific slide
+        function showSlides(n) {
+            if (slides.length === 0) return; // Exit if no slides found
+
+            // Handle wrapping
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+
+            // Hide all slides
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove('active');
+                slides[i].style.display = "none";
+            }
+
+            // Show the current slide
+            slides[slideIndex - 1].classList.add('active');
+            slides[slideIndex - 1].style.display = "block";
+
+            // Update the slide counter text
+            slideNumberElement.textContent = `Slide ${slideIndex} of ${slides.length}`;
+        }
+
+        // Function to change the slide when clicking prev/next buttons
+        function changeSlide(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Initialize the slideshow when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            showSlides(slideIndex);
+        });
+    </script>
+</body>
+</html>

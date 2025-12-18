@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Relevance of Statistics in Decision Making - Meross Baring</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        /* Custom styles for the page */
+        body {
+            font-family: 'Merriweather', serif;
+            /* Cute polka dot background */
+            background-color: #fefce8; /* yellow-50 */
+            background-image: radial-gradient(rgba(250, 204, 21, 0.4) 1.5px, #fefce8 1.5px); /* yellow-400 at 40% opacity */
+            background-size: 20px 20px;
+        }
+
+        /* Sunflower Animation Styles */
+        .sunflower-container {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: 20px;
+            /* Add a gentle swaying animation */
+            animation: sway 5s ease-in-out infinite;
+        }
+
+            .sunflower-container.flower-2 {
+                /* Make the second flower sway slightly differently */
+                animation-duration: 4.5s;
+                animation-delay: 0.5s;
+            }
+
+        .sunflower-center {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #78350f; /* yellow-900 */
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+            border: 3px solid #b45309; /* yellow-700 */
+        }
+
+        .petal {
+            position: absolute;
+            width: 35px;
+            height: 60px;
+            background-color: #facc15; /* yellow-400 */
+            border: 2px solid #f59e0b; /* yellow-500 */
+            border-radius: 50% 50% 0 0;
+            top: 50%;
+            left: 50%;
+            transform-origin: bottom center;
+        }
+
+        /* Keyframe animation for swaying */
+        @keyframes sway {
+            0%, 100% {
+                transform: rotate(-3deg);
+            }
+
+            50% {
+                transform: rotate(3deg);
+            }
+        }
+
+        .nav-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+    </style>
+</head>
+<body class="min-h-screen p-4 md:p-8 flex justify-center">
+
+    <div class="flex items-start justify-center w-full max-w-[100rem]">
+
+        <!-- Left Decorative Flower -->
+        <div class="hidden lg:flex flex-shrink-0 justify-center items-center mt-32">
+            <div class="sunflower-container flower-1">
+                <div class="sunflower-center"></div>
+                <div class="petal" style="transform: translate(-50%, -100%) rotate(0deg);"></div>
+                <div class="petal" style="transform: translate(-50%, -100%) rotate(45deg);"></div>
+                <div class="petal" style="transform: translate(-50%, -100%) rotate(90deg);"></div>
+                <div class="petal" style="transform: translate(-50%, -100%) rotate(135deg);"></div>
+                <div class="petal" style="transform: translate(-50%, -100%) rotate(180deg);"></div>
+                <div class="petal" style="transform: translate(-50%, -100%) rotate(225deg);"></div>
+                <div class="petal" style="transform: translate(-50%, -100%) rotate(270deg);"></div>
+                <div class="petal" style="transform: translate(-50%, -100%) rotate(315deg);"></div>
+            </div>
+        </div>
+
+        <div class="max-w-full w-[80rem] bg-white rounded-3xl shadow-xl overflow-hidden border border-yellow-100">
+
+            <header class="p-8 bg-yellow-300 text-center">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-yellow-900 font-['Dancing_Script',_cursive] mb-2">
+                    The Relevance of Statistics in Decision Making
+                </h1>
+                <div class="mt-4 text-yellow-800 font-medium">
+                    <p class="text-xl">Author: Meross C. Baring 白美玲 (S24101307)</p>
+                    <p class="text-md mt-1 opacity-90">Email: baringmeross@gmail.com</p>
+                    <p class="text-md italic">Department: Information Management</p>
+                </div>
+            </header>
+
+            <nav class="flex flex-wrap justify-center gap-3 p-6 bg-yellow-100 border-b-4 border-yellow-200" id="navigation">
+                <a href="index.html" class="nav-button py-2 px-5 bg-yellow-200 text-yellow-900 font-semibold rounded-full shadow-md transition duration-300 ease-in-out transform">
+                    Home
+                </a>
+                <a href="links.html" class="nav-button py-2 px-5 bg-white text-yellow-700 font-semibold rounded-full shadow-md hover:bg-yellow-200 transition duration-300 ease-in-out transform hover:-translate-y-1">
+                    About & Links
+                </a>
+                <a href="slideshows.html" class="nav-button py-2 px-5 bg-white text-yellow-700 font-semibold rounded-full shadow-md hover:bg-yellow-200 transition duration-300 ease-in-out transform hover:-translate-y-1">
+                    Slideshows
+                </a>
+                <a href="videos.html" class="nav-button py-2 px-5 bg-white text-yellow-700 font-semibold rounded-full shadow-md hover:bg-yellow-200 transition duration-300 ease-in-out transform hover:-translate-y-1">
+                    Videos
+                </a>
+                <a href="thinking.html" class="nav-button py-2 px-5 bg-white text-yellow-700 font-semibold rounded-full shadow-md hover:bg-yellow-200 transition duration-300 ease-in-out transform hover:-translate-y-1">
+                    Critical Thinking
+                </a>
+                <a href="articles.html" class="nav-button py-2 px-5 bg-white text-yellow-700 font-semibold rounded-full shadow-md hover:bg-yellow-200 transition duration-300 ease-in-out transform hover:-translate-y-1">
+                    Articles
+                </a>
+            </nav>
+
+            <main class="px-8 md:px-12 pt-8 md:pt-12 pb-0">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-4xl font-bold text-yellow-800 mb-6 text-center font-['Dancing_Script',_cursive]">
+                        Abstract
+                    </h2>
+                    <p class="text-lg text-gray-700 leading-relaxed text-justify mb-8 italic border-l-4 border-yellow-400 pl-6">
+                        Statistics are fundamental to the process of decision-making across virtually all disciplines. They provide the essential quantitative foundation for the collection, organization, analysis, and interpretation of data, enabling individuals and institutions to make informed and rational choices. In a modern society increasingly driven by data and technology, statistical knowledge has become indispensable for transforming raw information into meaningful insights that support logical, objective, and evidence-based decision-making. By applying statistical principles, decision-makers can effectively reduce uncertainty, identify patterns and relationships, forecast potential outcomes, and evaluate the impact of their actions in a systematic and empirical manner.
+                    </p>
+                </div>
+            </main>
+
+            <section class="px-8 md:px-12 pt-6 pb-8 md:pb-12 bg-yellow-50/50">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-4xl font-bold text-yellow-800 mb-6 text-center font-['Dancing_Script',_cursive]">
+                        Encouragement
+                    </h2>
+                    <div class="space-y-4">
+                        <p class="text-lg text-gray-800 leading-relaxed text-justify">
+                            Welcome to the foundational exploration of Statistics. As a dedicated student and aspiring educator in this field, I am profoundly interested in the discipline's capacity to convert raw numerical data into meaningful knowledge. My academic focus is driven by the desire to master statistical methods—from data collection to advanced modeling—and to clearly articulate these concepts to my peers.
+                        </p>
+                        <p class="text-lg text-gray-800 leading-relaxed text-justify">
+                            Crucially, I aim to underscore the central, practical beauty of statistics: its indispensable role as the primary framework for evidence-based, informed decision-making across all academic and professional sectors. My goal is to equip fellow learners not only with the technical skills but also with the statistical literacy necessary to critically evaluate information and confidently navigate the modern world.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="p-6 bg-yellow-900 text-yellow-100 text-center text-sm">
+                <p>© 2024 Meross C. Baring 白美玲 | Information Management</p>
+            </footer>
+
+        </div>
+
+        <!-- Right Decorative Flower -->
+        <div class="hidden lg:flex flex-shrink-0 justify-center items-center mt-32">
+            <div class="sunflower-container flower-2">
+                <div class="sunflower-center"></div>
+                <div class="petal" style="transform: translate(-50%, -100%) rotate(0deg);"></div>
+                <div class="petal" style="transform: translate(-50%, -100%) rotate(45deg);"></div>
+                <div class="petal" style="transform: translate(-50%, -100%) rotate(90deg);"></div>
+                <div class="petal" style="transform: translate(-50%, -100%) rotate(135deg);"></div>
+                <div class="petal" style="transform: translate(-50%, -100%) rotate(180deg);"></div>
+                <div class="petal" style="transform: translate(-50%, -100%) rotate(225deg);"></div>
+                <div class="petal" style="transform: translate(-50%, -100%) rotate(270deg);"></div>
+                <div class="petal" style="transform: translate(-50%, -100%) rotate(315deg);"></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
